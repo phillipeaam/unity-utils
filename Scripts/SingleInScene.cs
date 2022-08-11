@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class SingleInScene<T> : MonoBehaviour where T : MonoBehaviour
+public class SingleInScene<T> : MonoBehaviour where T : SingleInScene<T>
 {
     public static T Instance { get; private set; }
 
